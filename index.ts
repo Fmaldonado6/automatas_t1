@@ -36,10 +36,10 @@ function main() {
 }
 
 function match(word: string): boolean {
-    const matricula = "1339767"
-    const numerosMatricula = "(1|3|9|7|6)"
-    const alfabeto = "(y|a|z|m|n|b|j|h|i|e|l|g|u|r|o|c|1|3|9|7|6)"
-    let regex = new RegExp(`^${numerosMatricula}+${alfabeto}*\.?${alfabeto}*(yjgc)${alfabeto}*\.?${alfabeto}*.${matricula}$`, "g")
+    const matricula = "1844441"
+    const numerosMatricula = "(1|8|4)"
+    const alfabeto = "(j|e|s|u|a|l|x|n|d|r|o|h|z|i|v|1|8|4)"
+    let regex = new RegExp(`^${numerosMatricula}+${alfabeto}*\.?${alfabeto}*(jahr)${alfabeto}*\.?${alfabeto}*.${matricula}$`, "g")
     const val = regex.test(word)
     return val
 }
