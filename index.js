@@ -24,10 +24,10 @@ function main() {
     }
 }
 function match(word) {
-    var matricula = "1339767";
-    var numerosMatricula = "(1|3|9|7|6)";
-    var alfabeto = "(y|a|z|m|n|b|j|h|i|e|l|g|u|r|o|c|1|3|9|7|6)";
-    var regex = new RegExp("^" + numerosMatricula + "+" + alfabeto + "*.?" + alfabeto + "*(yjgc)" + alfabeto + "*.?" + alfabeto + "*." + matricula + "$", "g");
+    var matricula = "1844441";
+    var numerosMatricula = "(1|8|4)";
+    var alfabeto = "(j|e|s|u|a|l|x|n|d|r|o|h|z|i|v|1|8|4)";
+    var regex = new RegExp("^" + numerosMatricula + "+" + alfabeto + "*.?" + alfabeto + "*(jahr)" + alfabeto + "*.?" + alfabeto + "*." + matricula + "$", "g");
     var val = regex.test(word);
     return val;
 }
