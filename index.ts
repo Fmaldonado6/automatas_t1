@@ -10,13 +10,14 @@ function main() {
 
     while (true) {
         console.clear()
+        console.log("Alfabeto utilizado: S = {j,e,s,u,a,l,x,n,d,r,o,h,z,i,v,1,8,4,.}")
         const cadena = question("Bienvenido ingrese la cadena que quiera validar: ")
         const valid = match(cadena)
 
         if (valid)
-            console.log(VERDE,"La cadena es valida")
+            console.log(VERDE,"Cadena valida")
         else
-            console.log(ROJO,"La cadena es invalida")
+            console.log(ROJO,"Cadena invalida")
 
             
         let res: string
