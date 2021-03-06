@@ -11,6 +11,8 @@ function main() {
     while (true) {
         console.clear()
         console.log("Alfabeto utilizado: S = {j,e,s,u,a,l,x,n,d,r,o,h,z,i,v,1,8,4,.}")
+        console.log("Matricula: 1844441")
+        console.log("Iniciales: jahr")
         const cadena = question("Bienvenido ingrese la cadena que quiera validar: ")
         const valid = match(cadena)
 
@@ -40,7 +42,8 @@ function match(word: string): boolean {
     const matricula = "1844441"
     const numerosMatricula = "(1|8|4)"
     const alfabeto = "(j|e|s|u|a|l|x|n|d|r|o|h|z|i|v|1|8|4)"
-    let regex = new RegExp(`^${numerosMatricula}+${alfabeto}*\.?${alfabeto}*(jahr)${alfabeto}*\.?${alfabeto}*.${matricula}$`, "g")
+    const iniciales = "(jahr)"
+    let regex = new RegExp(`^${numerosMatricula}+((${alfabeto})|(${alfabeto}\.))*${iniciales}((${alfabeto})|(\.${alfabeto}))*.${matricula}$`, "g")
     const val = regex.test(word)
     return val
 }
